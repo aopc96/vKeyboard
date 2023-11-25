@@ -1,0 +1,224 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+}
+p,sub{
+    pointer-events: none;
+    user-select: none;
+}
+.container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;;
+    background-image: url('bgimage.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    overflow: scroll;
+}
+.navbar{
+    width: 100vw;
+    height: 10%;
+    text-align: center;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    color: white;
+    font-size: x-large;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.keys{
+    width: 700px;
+    aspect-ratio: 16/5;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 7px;
+    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.505);
+    overflow:hidden;
+    z-index: 1000;
+}
+.top{
+    font-family: 'DM Sans', sans-serif;
+    user-select: none;
+    font-size: large;
+    position: absolute;
+    width: 98%;
+    aspect-ratio: 20/1;
+    top:5%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(38, 38, 38);
+    z-index: 1004;
+}
+.speaker{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    border-radius: 5px;
+}
+.white-keys{
+    position: absolute;
+    width: 98%;
+    aspect-ratio: 16/3.8;
+    padding: 0%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    z-index: 1002;
+    pointer-events: none;
+}
+.black-keys{
+    position: relative;
+    width: 98%;
+    aspect-ratio: 20/3;
+    padding: 0%;
+    top: -1%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1003;
+    pointer-events: none;
+}
+.white-keys button, .black-keys button{
+    box-shadow: none;
+    display: flex;
+    align-items:flex-end;
+    justify-content:center;
+    padding-bottom: 1%;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor:pointer;
+}
+.white-keys button{
+    width: 10%;
+    aspect-ratio: 1/4.05;
+    float: left;
+    border: 1px solid black;
+    pointer-events: auto;
+}
+.black-keys button{
+    width: 4%;
+    aspect-ratio: 2/7;
+    margin: 0px .78%;
+    padding: 1% 5px;
+    font-size: x-small;
+    color: white;
+    background-color: black;
+    box-shadow: .8em 0px 3px rgba(0, 0, 0, 0.250); 
+    pointer-events: auto;
+}
+.white-keys button:active{
+    aspect-ratio: 1/4.15;
+    background-image: linear-gradient(82deg, rgb(111, 111, 111),rgba(219, 219, 219, 0.87), white);
+}
+.black-keys button:active{
+    aspect-ratio: 2/7.2;
+    box-shadow: 4px 0px 2px rgba(0, 0, 0, 0.250);
+}
+.converter{
+    width: 480px;
+    aspect-ratio: 10/4;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transform: translate(-50%,-50%);
+}
+.output{
+    width: 100%;
+    aspect-ratio: 10/3;
+    position: fixed;
+    bottom: 0px;
+    background-color: black;
+    border: none;
+    border-radius: 10px ;
+    color: wheat;
+    font-size: 13px;
+    font-family: 'Carrois Gothic', sans-serif;
+    z-index: 1007;
+    
+}
+textarea { 
+    resize: none;
+    padding: 2%;
+    line-height: 2rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #002200;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+  }
+.outcntr{
+    position: absolute;
+    top: 0px;
+    width: 14%;
+    padding: 1% 2%;
+    font-size:small;
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    border: none;
+    font-family: 'Carrois Gothic', sans-serif;
+}
+#clear{right: 0px;}
+#clear:hover{
+    color: red;
+    width: 13%;
+     transition: width 100ms;
+    transition-timing-function: ease-in;}
+#clear:active{ color: black;}
+
+#new-line{
+    width: 70%;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#new-line:hover{
+    color: rgb(190, 235, 113); 
+    width: 69%; 
+    transition: width 100ms; 
+    transition-timing-function: ease-in;}
+#new-line:active{color: black;}
+
+#copy{left: 0px;}
+#copy:hover{
+    color: rgb(136, 213, 3); 
+    width: 13%; 
+    transition: width 100ms; 
+    transition-timing-function: ease-in;}
+#copy:active{color: black;}
+
+
+
+@media only screen and (max-width: 600px) {
+.keys{
+    width: 600px;
+}
+.converter{
+    width: 400px;
+    aspect-ratio: 10/7;
+}
+.output{
+    aspect-ratio: 10/6;
+}

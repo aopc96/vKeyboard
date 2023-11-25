@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTAINERS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">VIRTUAL KEYBOARD + NOTATION CONVERTER</div>
+        <div id="key" class= "keys">
+            <div class="top">VIRTUAL KEYBOARD
+                <div class="speaker" style="left: 0px;"></div>
+                <div class="speaker" style="right: 0px"></div>
+            </div>
+            <div class="white-keys">
+                <button id="F0" value=".ma1 ">F<sub>3</sub></button>
+                <button id="G0" value=".pa1 ">G<sub>3</sub></button>
+                <button id="A0" value=".dha2/.ni1 ">A<sub>3</sub></button>
+                <button id="B0" value=".ni3 ">B<sub>3</sub></button>
+                <button id="C1" value="sa ">C<sub>4</sub></button>
+                <button id="D1" value="ri1/ri2 ">D<sub>4</sub></button>
+                <button id="E1" value="ga3 ">E<sub>4</sub></button>
+                <button id="F1" value="ma1 " >F<sub>4</sub></button>
+                <button id="G1" value="pa ">G<sub>4</sub></button>
+                <button id="A1" value="dha2/ni1 ">A<sub>4</sub></button>
+                <button id="B1" value="ni3 ">B<sub>4</sub></button>
+                <button id="C2" value="Sa ">C<sub>5</sub></button>
+                <button id="D2" value="Ri1/Ri2 ">D<sub>5</sub></button>
+                <button id="E2" value="Ga3 ">E<sub>5</sub></button>
+                <button id="F2" value="Ma3 ">F<sub>5</sub></button>
+                <button id="G2" value="Pa3 ">G<sub>5</sub></button>
+                <button id="A2" value="Dha3/Ni2 ">A<sub>5</sub></button>
+                <button id="B2" value="Ni3 ">B<sub>5</sub></button>
+            </div>
+            <div class="black-keys">
+                <button id="F#0" value=".ma2 ">F#<sub>3</sub></button>
+                <button id="G#0" value=".dha1 ">G#<sub>3</sub></button>
+                <button id="A#0" value=".dha3/.ni2 ">A#<sub>3</sub></button>
+                <button id="Q1" style="visibility: hidden;">Q</button>
+                <button id="C#1" value="ri1 ">C#<sub>4</sub></button>
+                <button id="D#1" value="ri3/ga2 ">D#<sub>4</sub></button>   
+                <button id="Q2" style="visibility: hidden;">Q</button>
+                <button id="F#1" value="ma2 ">F#<sub>4</sub></button>
+                <button id="G#1" value="dha1 ">G#<sub>4</sub></button>
+                <button id="A#1" value="dha3/ni2 ">A#<sub>4</sub></button>
+                <button id="Q3" style="visibility: hidden;">Q</button>
+                <button id="C#2" value="Ri1 ">C#<sub>5</sub></button>
+                <button id="D#2" value="Ri3/Ga2 ">D#<sub>5</sub></button> 
+                <button id="Q4" style="visibility: hidden;">Q</button>
+                <button id="F#2" value="Ma2 ">F#<sub>5</sub></button>
+                <button id="G#2" value="Dha1 ">G#<sub>5</sub></button>
+                <button id="A#2" value="Dha3/Ni2 ">A#<sub>5</sub></button>       
+            </div>
+        </div>
+        <div class="converter">
+            <textarea class="output" id="converted" placeholder="Carnatic / Hindustani Notes"></textarea> 
+            <button class="outcntr" id="clear">Clear</button>
+            <button class="outcntr" id="new-line">New Line</button>
+            <button class="outcntr" id="copy">Copy</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
