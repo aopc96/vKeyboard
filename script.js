@@ -7,7 +7,7 @@ x.addEventListener('click', event => {
        document.getElementById('converted').value += value+'  ';
        let x = String(target.id);
        switch(x){
-            case 'F0': new Audio("vKeyboard/sample/m(33).wav").play();
+            case 'F0': new Audio("/sample/m(33).wav").play();
             break;
             case 'F#0': new Audio("sample/m(34).wav").play();
             break;
